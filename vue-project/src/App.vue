@@ -1,18 +1,18 @@
-
 <template>
   <div>
-    <bai2/>
-    <bai3/>
-    <bai4 /> 
+    <B4/>
 
-
-  
-
-
+    <DataBinding/>
   </div>
 </template>
+
 <script setup>
-import bai2 from "../bai2.vue";
-import bai3 from "../bai3.vue";
-import bai4 from "../bai4.vue";
+import B4 from './components/bai2buoi3.vue';
+import DataBinding from './components/dataBinding.vue';
+
+
 </script>
+
+<style lang="scss" scoped>
+
+</style>
