@@ -1,16 +1,11 @@
 <template>
   <div>
-    <B4/>
-
-    <DataBinding/>
+    <ConditionalRendering/>
   </div>
 </template>
 
 <script setup>
-import B4 from './components/bai2buoi3.vue';
-import DataBinding from './components/dataBinding.vue';
-
-
+import ConditionalRendering from './components/ConditionalRendering.vue';
 </script>
 
 <style lang="scss" scoped>
