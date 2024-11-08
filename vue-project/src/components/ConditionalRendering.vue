@@ -8,7 +8,10 @@
             <a href="#" class="forgot-password">Forgot Password?</a>
         </form>
     </div>
-    <div v-else>Chào mừng bạn {{ user.username }} đã tới </div>
+    <div v-else>
+        <p>Chào mừng {{user.username}} đã tới</p>
+        <button @click="logout">Đăng xuất</button>
+    </div>
 </template>
 
 <script setup>
@@ -27,12 +30,14 @@ const check = (e) => {
     if(username.value ===user.username && password.value === user.password){
         alert("đăng nhập thành công")
         isLogin.value = true
-        setTimeout(()=>{
-            isLogin.value = false
-        },10000)
     } else {
         alert("sai tài khoản")
     }
+}
+
+const logout = ()=> {
+    isLogin.value = false
+    alert("bạn đã đăng xuất")
 }
 
 </script>
